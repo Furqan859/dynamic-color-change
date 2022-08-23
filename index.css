@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    position:absolute;
+    
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+button{
+    background-color:orchid;
+    color:aliceblue;
+    border: none;
+    font-size: large;
+    padding:10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+button:hover{
+    background-color:rgb(192, 96, 189);
+    color:rgb(33, 75, 112);
+    border: 1px solid rgb(201, 63, 196);
+    border-radius: 20px;
+}
+
+
+.side-close{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.side-close a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#818181;
+    display: block;
+    transition: 0.3;
+
+}
+
+.side-close a:hover{
+    color: #f1f1f1;
+}
+
+
+.sideclose .side-show{
+    position: absolute;
+    top: 0;
+    right: 25px;font-size:36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.side-show:hover{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  
+
+
+
